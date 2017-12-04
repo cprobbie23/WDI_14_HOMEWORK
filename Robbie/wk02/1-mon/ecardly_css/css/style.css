@@ -1,0 +1,32 @@
+body {
+  background-color: #d6d6d6;
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+}
+
+.logo {
+  align-items: center;
+}
+
+.main {
+  float: left;
+  width: 576px;
+  margin: 50px;
+  background-color: white;
+}
+
+.sideBar {
+  float: left;
+  width: 252px;
+  margin: 50px;
+  background-color: white;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 35px, 0, 14px, 19px;
+}
+
+span {
+  color: #f63a05;
+}
