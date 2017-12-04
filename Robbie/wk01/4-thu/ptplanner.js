@@ -11,8 +11,8 @@ console.log('Glen Waverley line: ' + glen_Waverley_line.toString());
 console.log('Sandringham line: ' + sandringham_line.toString());
 console.log('');
 
-var origin =  prompt('Please enter your origin station:');
-var destination = prompt('Please enter your destination station:');
+var origin =  prompt('Please choose your origin station: ' + alamein_line.toString() + glen_Waverley_line.toString() + sandringham_line.toString());
+var destination = prompt('Please choose your destination station: ' + alamein_line.toString() + glen_Waverley_line.toString() + sandringham_line.toString());
 console.log('origin: ' + origin);
 console.log('destination: ' + destination);
 console.log('');
