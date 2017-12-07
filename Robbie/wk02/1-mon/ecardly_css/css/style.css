@@ -4,8 +4,10 @@ body {
   background-repeat: repeat-x;
 }
 
-.logo {
+.logo img {
   align-items: center;
+      margin: 0 auto;
+    display: block;
 }
 
 .main {

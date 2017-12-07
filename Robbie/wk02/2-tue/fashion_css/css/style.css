@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+
+  margin: 0 auto;
+  width: 75%;
+}
+
+h1 {
+  color: darkred;
+  display: inline;
+  font-size: 50px;
+}
+
+header p {
+  display: inline;
+  color: grey;
+  margin: 0 30px;
+  font-size: 25px;
+}
+
+nav {
+
+}
+
+ul {
+  padding-left: 0;
+}
+
+nav li {
+  font-size: 25px;
+  color: white;
+  list-style: none;
+  display: inline;
+  background-color: black;
+  padding: 15px 37px;
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  vertical-align: top;
+  display: inline-block;
+  width: 65%;
+}
+
+h2 {
+  color: grey;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+article {
+  padding-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+
+aside {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  margin: 5% 2.1%;
+}
+
+aside img {
+  margin-top: 30px;
+}
+
+aside p{
+  color: grey;
+}
+
+h4 {
+  color: grey;
+  font-size: 20px;
+}
+
+a {
+  float: right;
+  color: red;
+  text-decoration: none;
+}
+
+aside img {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+}
+
+aside ul {
+  padding-left: 40px;
+}
+
+aside li {
+  color: red;
+  font-size: 19px;
+}
+
+.downNav li {
+  display: inline;
+  padding-right: 5px;
+  color: red;
+  list-style: none;
+  border-right: 1px solid grey;
+  margin: 0;
+
+}
+.foot p {
+  color: grey;
+}
