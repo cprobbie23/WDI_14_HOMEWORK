@@ -68,13 +68,17 @@ if (lineFinder(origin) == lineFinder (destination) ){
     var dTranIndex = lineFinder(destination).indexOf('Richmond');
 
     if (originIndex < oTranIndex && dTranIndex < destinationIndex) {
-    var journeyArray = lineFinder(origin).slice(originIndex, oTranIndex + 1).concat(lineFinder(destination).slice(dTranIndex + 1, destinationIndex + 1));
+    var journeyArray = lineFinder(origin).slice(originIndex, oTranIndex + 1)
+    .concat(lineFinder(destination).slice(dTranIndex + 1, destinationIndex + 1));
   } else if (originIndex > oTranIndex && dTranIndex > destinationIndex){
-    var journeyArray = lineFinder(origin).slice(oTranIndex, originIndex + 1).reverse().concat(lineFinder(destination).slice(destinationIndex, dTranIndex).reverse());
+    var journeyArray = lineFinder(origin).slice(oTranIndex, originIndex + 1).reverse()
+    .concat(lineFinder(destination).slice(destinationIndex, dTranIndex).reverse());
   } else if (originIndex < oTranIndex && dTranIndex > destinationIndex) {
-    var journeyArray = lineFinder(origin).slice(originIndex, oTranIndex + 1).concat(lineFinder(destination).slice(destinationIndex + 1, dTranIndex + 1).reverse());
+    var journeyArray = lineFinder(origin).slice(originIndex, oTranIndex + 1)
+    .concat(lineFinder(destination).slice(destinationIndex + 1, dTranIndex + 1).reverse());
   } else if (originIndex > oTranIndex && dTranIndex < destinationIndex){
-    var journeyArray = lineFinder(origin).slice(oTranIndex, originIndex + 1).reverse().concat(lineFinder(destination).slice(dTranIndex + 1, destinationIndex + 1));
+    var journeyArray = lineFinder(origin).slice(oTranIndex, originIndex + 1).reverse()
+    .concat(lineFinder(destination).slice(dTranIndex + 1, destinationIndex + 1));
   } 
 }
   break;

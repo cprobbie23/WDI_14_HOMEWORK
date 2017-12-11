@@ -29,11 +29,11 @@ function sAdd(){
 function sSubtract(){
   var remain = sBalance.textContent;
   var newRemain = Number(remain) - Number(savingsInput.value);
-  if (newRemain > 0) {
-  sBalance.textContent = newRemain.toFixed(2);
+    if (newRemain > 0) {
+    sBalance.textContent = newRemain.toFixed(2);
   } else if (newRemain == 0) {
     sBalance.textContent = newRemain.toFixed(2);
-  document.querySelector('.savings').style.backgroundColor = "red";
+    document.querySelector('.savings').style.backgroundColor = "red";
   } else {
     sBalance.textContent = remain;
   }
@@ -60,11 +60,9 @@ function cSubtract(){
     document.querySelector('.checking').style.backgroundColor = "red";
     sBalance.textContent = (sBalance.textContent - Math.abs(newRemain)).toFixed(2);
     cBalance.textContent = '0.00';
-
   } else {
     cBalance.textContent = remain;
   }
-  return newRemain;
 }
 
 sDeposit.addEventListener('click', sAdd);

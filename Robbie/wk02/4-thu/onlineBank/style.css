@@ -52,7 +52,7 @@ span {
 
 input {
   display: block;
-  font-size: 30px;
+  font-size: 27px;
   background-color: white;
   height: 50px;
   width: 200px;
@@ -61,19 +61,11 @@ input {
   margin: 0 auto;
 }
 
-/*.withdrawBtn {
-  display: inline-block;
-  background-color: silver;
-  width: 80px;
-  height: 30px;
-  margin: 10px 10px;
-  border-radius: 5px;
-  padding: 5px 0;
-}*/
 
 button {
   font-size: 18px;
   display: inline-block;
   margin: 10px 10px;
   border-radius: 5px;
+  padding: 8px;
 }
