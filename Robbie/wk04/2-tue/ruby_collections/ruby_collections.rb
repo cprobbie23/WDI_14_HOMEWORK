@@ -30,4 +30,34 @@ puts heroes.select {
   |str| str.start_with?("B")
 }
 
+puts 'Hashes1-----------'
+ninja_turtle = {
+  name: "Michelangelo",
+  weapon: "Nunchuks",
+  radical: true
+}
+puts ninja_turtle
+
+puts 'Hashes2-----------'
+ninja_turtle[:age] = 50
+puts ninja_turtle
+
+puts 'Hashes3-----------'
+ninja_turtle.delete(:radical)
+puts ninja_turtle
+
+puts 'Hashes4-----------'
+ninja_turtle[:pizza_toppings] = ["cheese", "pepperoni", "peppers"]
+puts ninja_turtle
+
+puts 'Hashes5-----------'
+puts ninja_turtle[:pizza_toppings][0]
+
+puts 'Hashes6-----------'
+array_of_keys = ninja_turtle.keys
+puts array_of_keys
+
+puts 'bonus-------------'
+ninja_turtle.each {|key, value| puts key.to_s + "'s is equal to " + value.to_s}
+
 binding.pry
