@@ -30,7 +30,7 @@ require 'pry'
 loop do
   puts '------Start Calculator------'
     # a is operand_1 and b is operand_2
-  print 'Input first operand: '
+  print 'Enter first number: '
   a = gets.chomp
 
   more_input = 'y'
@@ -78,7 +78,7 @@ loop do
     end
 
     def new_operand()
-      print 'Input another operand: '
+      print 'Enter another number: '
       b = gets.chomp
       return b
     end
