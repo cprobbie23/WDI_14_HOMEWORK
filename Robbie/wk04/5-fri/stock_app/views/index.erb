@@ -35,8 +35,40 @@
       <ol>Last dividend: <%= @ldiv %></ol>
       <ol>Institution own: <%= @instown %></ol>
       <ol>Industry: <%= @iname %></ol>
+    </div> 
+  </div>
+  <br>
+  <!-- ========================Part two========================== -->
+  <div class="top"><p><%= @exchange1 %></p><p>Stock ID: <%= @id1 %></p><a href="<%= @reuters %>">Reuters: <%= @reuters1 %></a></div>
+  <main>
+    <div class="left"><h1><%= @name1 %></h1><h1>(<%= @symb1 %>)</h1></div>
+    <div class="center"><h1>$<%= @price1 %></h1></div>
+    <div class="right"><p id="p1"><span id="chgP1"><%= @cp1 %></span>%</p> <span id="chg1"><%= @c1 %></span></div>
+    <div class="side_list">
+      <ol>Open: <%= @open1 %></ol>
+      <ol>High: <%= @hi1 %></ol>
+      <ol>Low: <%= @lo1 %></ol>
+      <ol>Volume: <%= @vo1 %></ol>
+      <ol>Avg Vol: <%= @avvo1 %></ol>
     </div>
-  
+  </main>
+  <div class="detail">
+    <div class="l_list">
+      <ol>52 wk high: <%= @hi521 %></ol>
+      <ol>Market cap: <%= @market_cap1 %></ol>
+      <ol>beta: <%= @beta1 %></ol>
+      <ol>Dividend yd: <%= @dividend_yd1 %></ol>
+      <ol>Shares: <%= @shares1 %></ol>
+      <ol>Sector: <%= @sname1 %></ol>
+    </div>
+    <div class="c_list">
+      <ol>52 wk low: <%= @lo521 %></ol>
+      <ol>PE ratio: <%= @pe1 %></ol>
+      <ol>EPS: <%= @eps1 %></ol>
+      <ol>Last dividend: <%= @ldiv1 %></ol>
+      <ol>Institution own: <%= @instown1 %></ol>
+      <ol>Industry: <%= @iname1 %></ol>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
