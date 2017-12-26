@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Miner</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="top"><p><%= @exchange %></p><p>Stock ID: <%= @id %></p><a href="<%= @reuters %>">Reuters: <%= @reuters %></a></div>
+  <main>
+    <div class="left"><h1><%= @name %></h1><h1>(<%= @symb %>)</h1></div>
+    <div class="center"><h1>$<%= @price %></h1></div>
+    <div class="right"><p><span id="chgP"><%= @cp %></span>%</p> <span id="chg"><%= @c %></span></div>
+    <div class="side_list">
+      <ol>Open: <%= @open %></ol>
+      <ol>High: <%= @hi %></ol>
+      <ol>Low: <%= @lo %></ol>
+      <ol>Volume: <%= @vo %></ol>
+      <ol>Avg Vol: <%= @avvo %></ol>
+    </div>
+  </main>
+  <div class="detail">
+    <div class="l_list">
+      <ol>52 wk high: <%= @hi52 %></ol>
+      <ol>Market cap: <%= @market_cap %></ol>
+      <ol>beta: <%= @beta %></ol>
+      <ol>Dividend yd: <%= @dividend_yd %></ol>
+      <ol>Shares: <%= @shares %></ol>
+      <ol>Sector: <%= @sname %></ol>
+    </div>
+    <div class="c_list">
+      <ol>52 wk low: <%= @lo52 %></ol>
+      <ol>PE ratio: <%= @pe %></ol>
+      <ol>EPS: <%= @eps %></ol>
+      <ol>Last dividend: <%= @ldiv %></ol>
+      <ol>Institution own: <%= @instown %></ol>
+      <ol>Industry: <%= @iname %></ol>
+    </div>
+  
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+<%=  %>
