@@ -1,0 +1,15 @@
+<h2>Movie Information</h2>
+
+<div class="left">
+  <img src="<%= @result_hash["Poster"] %>" alt="">
+</div>
+
+<div class="right">
+  <h3>Movie Title: <%= @result_hash["Title"] %></h3>
+  <p>Year: <%= @result_hash["Year"] %></p>
+  <p>Duration: <%= @result_hash["Runtime"] %></p>
+  <p>Genre: <%= @result_hash["Genre"] %></p>
+  <p>Director: <%= @result_hash["Director"] %></p>
+  <p>Description: <%= @result_hash["Plot"] %></p>
+  <p>Metascore: <%= @result_hash["Metascore"] %>/100</p>
+</div>
