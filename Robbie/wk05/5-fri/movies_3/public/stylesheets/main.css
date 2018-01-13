@@ -1,0 +1,61 @@
+. {
+  box-sizing: border-box;
+}
+
+div.result {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.result a{
+  display: inline-block;
+  margin: 14px;
+  transition: transform .2s;
+  text-align: center;  
+}
+
+
+div.result a:hover {
+  transform: scale(1.05);
+}
+
+.result img {
+  max-height: 430px;
+  max-width: 280px;
+}
+
+.left, .right {
+  display: inline-block;
+  float: left;
+  width: 49%;
+}
+.right {
+  border-left: 5px solid grey;
+  border-radius: 1px;
+  padding-left: 10px;
+}
+.left {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form, a {
+  display: inline-block;
+}
+
+input {
+  width: 380px;
+  height: 30px;
+  font-size: 20px;
+}
