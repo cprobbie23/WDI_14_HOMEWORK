@@ -7,9 +7,14 @@
 <div class="right">
   <p>Title: <%= @result_hash["Title"] %></p>
   <p>Year: <%= @result_hash["Year"] %></p>
-  <p>Duration: <%= @result_hash["Runtime"] %></p>
   <p>Genre: <%= @result_hash["Genre"] %></p>
+  <p>Date Released: <%= @result_hash["Released"] %></p>
+  <p>Duration: <%= @result_hash["Runtime"] %></p>
   <p>Director: <%= @result_hash["Director"] %></p>
+  <p>Actors: <%= @result_hash["Actors"] %></p>
+  <p>Language: <%= @result_hash["Language"] %></p>
   <p>Description: <%= @result_hash["Plot"] %></p>
-  <p>Metascore: <%= @result_hash["Metascore"] %>/100</p>
+  <br>
+  <p>Ratings:</p>
+  <p><%= @result_hash["Ratings"][0]["Source"] %>: <%= @result_hash["Ratings"][0]["Value"] %></p>
 </div>
