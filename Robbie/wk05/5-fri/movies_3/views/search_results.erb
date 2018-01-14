@@ -1,11 +1,13 @@
-<h2><%= @result_hash.count %> search results displayed for keyword: <span><%= @movie_keyword %></span></h2>
+<h2><%= @@result_hash.count %> search results displayed for keyword: <span><%= @movie_keyword %></span></h2>
 
 
-<div class="result" action = "/movie">  
-  <% @result_hash.each do |movie| %>
-  <a href="/movie?i=<%= movie["imdbID"] %>">  
+<div class="result" action="/show">  
+  <% @@result_hash.each do |movie| %>
+  <a href="/show?i=<%= movie["imdbID"] %>">  
     <img src="<%= movie["Poster"] %>" alt=""><br>
     <%= movie["Title"] %><br>(<%= movie["Year"] %>)
   </a>
   <% end %>
 </div>
+
+<!-- <p><%= @@imdbID_record %></p> -->

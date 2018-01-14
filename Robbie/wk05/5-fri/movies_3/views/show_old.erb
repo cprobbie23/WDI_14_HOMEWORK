@@ -1,0 +1,19 @@
+<h2><%= @@result_hash["title"] %></h2>
+
+<div class="left">
+  <img src="<%= @@result_hash["poster"] %>" alt="">
+</div>
+
+<div class="right">
+  <p>Title: <%= @@result_hash["title"] %></p>
+  <p>Year: <%= @@result_hash["year"] %></p>
+  <p>Genre: <%= @@result_hash["genre"] %></p>
+  <p>Date Released: <%= @@result_hash["released"] %></p>
+  <p>Duration: <%= @@result_hash["runtime"] %></p>
+  <p>Director: <%= @@result_hash["director"] %></p>
+  <p>Actors: <%= @@result_hash["actors"] %></p>
+  <p>Language: <%= @@result_hash["language"] %></p>
+  <p>Description: <%= @@result_hash["plot"] %></p>
+  <br>
+  <p>imdb Ratings: <span><%= @@result_hash["imdbrating"] %></span></p>
+</div>
