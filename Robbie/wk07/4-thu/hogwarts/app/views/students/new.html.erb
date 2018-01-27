@@ -1,2 +1,9 @@
 <h1>Welcome to the Sorting Hat!</h1>
-<% image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+<img src="http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" alt="">
+
+<form action="/students" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %> ">
+  <input type="text" name="name" placeholder="Student name">
+  <input type="text" name="img_url" placeholder="Student photo url">
+  <button>Enrol</button>
+</form>

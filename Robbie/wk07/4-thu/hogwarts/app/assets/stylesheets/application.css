@@ -58,3 +58,7 @@ img {
   border-radius: 40%;
   height: 300px;
 }
+
+a {
+  text-decoration: none;
+}
