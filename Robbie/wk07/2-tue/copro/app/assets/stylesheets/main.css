@@ -1,0 +1,63 @@
+label, input {
+  display: block;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 300px;
+  border: 3px solid black;
+  position: relative;
+}
+
+.heart {
+  opacity: 0.2;
+  color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 4em;
+  transition: .5s;
+}
+
+.show_img {
+  transition: .3s;
+}
+
+.show_img:hover .heart {
+  opacity: .5;
+}
+.heart:hover {
+  opacity: 1;
+}
+
+.project {
+  width: 50%;
+  /*float: left;*/
+  background-color: lightgreen;
+}
+
+.project img {
+  display: block; /*space under image*/
+}
+.project h2 {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .project {
+    width: 33.33333% 
+  }
+
+  .project h2{
+    display: block;
+  }
+}
+
+/*@media (min-width: 1000px) {
+  .project {
+    width: 25% 
+  }
+}*/
