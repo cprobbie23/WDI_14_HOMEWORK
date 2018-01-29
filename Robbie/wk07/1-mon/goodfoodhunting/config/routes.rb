@@ -1,0 +1,18 @@
+# we start from here, everything is based on this
+
+Rails.application.routes.draw do
+
+              # controller file & method
+  # root to: 'pages#home'
+  get '/', to: 'pages#home'
+  get '/about', to: 'pages#about'
+
+  get '/dishes/new', to: 'dishes#new'
+  get '/dishes/:id', to: 'dishes#show'
+  get '/dishes', to: 'dishes#index'
+  delete '/dishes/:id', to: 'dishes#destroy'
+  put '/dishes/:id', to: 'dishes#update'
+
+  resources :dishes
+  
+end
