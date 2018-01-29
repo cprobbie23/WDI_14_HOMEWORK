@@ -1,0 +1,49 @@
+<h3><%= @project.title %></h3>
+<div class="wrapper">
+  <img class="show_img" src="<%= @project.preview.url %> " alt="">
+  <span class="heart">&#x2665</span>
+</div>
+
+<form action="/likes" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %> ">
+  <input type="hidden" name="project_id" value="<%= @project.id %> ">
+  <span class="heart-count"><%= @project.likes.count %></span> 
+  <button>Like</button>
+</form>
+
+<h3>Comments</h3>
+
+<% @comments.each do |comment| %>
+  <p>
+    <%= comment.body %>
+  </p>
+<% end %>
+
+<form action="/comments" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %> ">
+  <input type="hidden" name="project_id" value="<%= @project.id %> ">
+  <textarea name="body" id="" cols="30" rows="10"></textarea>
+  <button>post</button>
+</form>
+
+<!-- <script>
+  var heart = document.querySelector('.wrapper span')
+  heart.addEventListener('click', function(){
+    console.log('This is a like!')
+    heart.style.color = "red";
+})
+</script> -->
+
+<script>
+    console.log('ready')
+
+    var hearts = document.querySelectorAll('.heart')
+    hearts.forEach(function(heart) {
+      heart.addEventListener('click', function(event){
+        var body = event.target.closest('body')
+        var heartCount = body.querySelector('.heart-count')
+        heartCount.textContent = Number(heartCount.textContent) + 1
+
+      })
+    })
+</script>
