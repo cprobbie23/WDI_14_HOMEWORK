@@ -5,10 +5,6 @@ class DishesController < ApplicationController
     
   end
 
-  def new
-    
-  end
-
   def show
     @dish = Dish.find(params[:id])
   end
@@ -21,6 +17,17 @@ class DishesController < ApplicationController
     else 
       render :new
     end    
+  end
+
+  def edit 
+    @dish = Dish.find(params[:id])
+  end
+
+  def update
+    dish = Dish.find(params[:id])
+    dish.name = params[:name]
+    dish.save
+    redirect_to "/dishes/#{dish.id}"
   end
 
   def destroy

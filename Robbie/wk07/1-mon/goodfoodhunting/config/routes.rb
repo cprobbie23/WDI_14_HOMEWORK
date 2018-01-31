@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   get '/', to: 'pages#home'
   get '/about', to: 'pages#about'
 
-  get '/dishes/new', to: 'dishes#new'
-  get '/dishes/:id', to: 'dishes#show'
-  get '/dishes', to: 'dishes#index'
-  delete '/dishes/:id', to: 'dishes#destroy'
-  put '/dishes/:id', to: 'dishes#update'
+  # get '/dishes/new', to: 'dishes#new'
+  # get '/dishes/:id', to: 'dishes#show'
+  # get '/dishes', to: 'dishes#index'
+  # get '/dishes/:id/edit', to: 'dishes#edit'
+  # put '/dishes/:id', to: 'dishes#update'
+  # delete '/dishes/:id', to: 'dishes#destroy'
 
   resources :dishes
   
