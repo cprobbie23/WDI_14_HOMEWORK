@@ -1,0 +1,7 @@
+<form action="/pokemons" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %> ">
+  <input type="text" name="species" placeholder="species">
+  <input type="text" name="nickname" placeholder="nickname">
+  <input type="text" name="level" placeholder="level">
+  <button>record</button>
+</form>

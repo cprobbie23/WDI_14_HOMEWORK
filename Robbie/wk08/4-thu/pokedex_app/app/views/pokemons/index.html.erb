@@ -1,0 +1,15 @@
+<h1>Your Pokemon Collections</h1>
+<% @pokemons.each do |pokemon| %>
+  <div class="index-box">
+    <p>Species: <%= pokemon.species %></p>
+    <p>Level: <%= pokemon.level %></p>
+    <p>Nickname: <%= pokemon.nickname %></p>
+    <button class="release-button">release</button>
+  </div>
+<% end %>
+
+<script>
+$('.release-button').click(function(e) {
+    $(e.target).parent().remove();
+})
+</script>
