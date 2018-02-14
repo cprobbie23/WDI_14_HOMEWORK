@@ -18,57 +18,57 @@ What is the output of each of the expressions below?
 
 ```js
 typeof 15
-// Prediction:
-// Actual:
+// Prediction: Number
+// Actual: "number"
 
 typeof 5.5
-// Prediction:
-// Actual:
+// Prediction: Number
+// Actual: "number"
 
 typeof NaN
-// Prediction:
-// Actual:
+// Prediction: Number
+// Actual: "number"
 
 typeof "hello"
-// Prediction:
-// Actual:
+// Prediction: String
+// Actual: "string"
 
 typeof true
-// Prediction:
-// Actual:
+// Prediction: Boolean
+// Actual: "boolean"
 
 typeof 1 != 2
-// Prediction:
-// Actual:
+// Prediction: Boolean
+// Actual: "boolean"
 
 
 "hamburger" + "s"
-// Prediction:
-// Actual:
+// Prediction: "hamburgers"
+// Actual: "hamburgers"
 
 "hamburgers" - "s"
-// Prediction:
-// Actual:
+// Prediction: "hamburger"
+// Actual: NaN
 
 "1" + "3"
-// Prediction:
-// Actual:
+// Prediction: "13"
+// Actual: "13"
 
 "1" - "3"
-// Prediction:
-// Actual:
+// Prediction: undefined
+// Actual: -2
 
 "johnny" + 5
-// Prediction:
-// Actual:
+// Prediction: "johnny5"
+// Actual: "johnny5"
 
 "johnny" - 5
-// Prediction:
-// Actual:
+// Prediction: undefined
+// Actual: NaN
 
 99 * "luftbaloons"
-// Prediction:
-// Actual:
+// Prediction: undefined
+// Actual: NaN
 ```
 
 ### Arrays
