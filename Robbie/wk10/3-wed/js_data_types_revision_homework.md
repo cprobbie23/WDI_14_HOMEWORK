@@ -192,7 +192,19 @@ You're a bouncer at a bar. Given an `age` variable, create a conditional that sa
 * If a patron is older than 75, print out `"Are you sure you want to be here?"`.
 
 ```js
-// Your answer goes here.
+if hasId
+  if (age > 75)
+    console.log("Are you sure you want to be here?")
+  else if (age > 21)
+    console.log("Come on in!")
+  else if (age >=18 && age <=21)
+    console.log("Come on in (but no drinking)!")
+  else
+    console.log("You're too young to be in here!")
+else
+  console.log("No ID, no entry")
+
+typeof(hasId) is Boolean
 ```
 
 #### Bonus
@@ -219,7 +231,16 @@ Your output should look something like this...
 ```
 
 ```js
-// Your answer goes here.
+for (var i = 1, i < 101, i++ ) {
+  if (i % 3 === 0 && i % 5 === 0){
+    console.log('FizzBuzz')
+  } else if (i % 3 === 0) {
+    console.log('Fizz')
+  } else if (i % 5 === 0) {
+    console.log('Buzz')
+  } else
+    console.log(i)
+}
 ```
 
 #### Bonus (for the bonus)
