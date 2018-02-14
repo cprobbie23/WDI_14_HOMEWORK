@@ -84,7 +84,12 @@ Javascript provides us with a number of native methods that allow us to interact
 > This is a great exercise for practicing your "Google Fu"! If you need a starting point, check out [MDN's documentation page on arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ```js
-// Your answers go here.
+[1,2,3].push(4) => [1,2,3,4]
+[1,2,3].pop() => [1,2]
+[1,2,3].unshift(0) => [0,1,2,3]
+[1,2,3].shift() => [1,2,3]
+[1,2,3].join('') => "123"
+"123".split('') => ["1", "2", "3"]
 ```
 
 What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
@@ -97,7 +102,8 @@ numbers.unshift(3)
 ```
 
 ```text
-Your answer goes here.
+Prediction: [3, 2, 4, 6, 10]
+Actual: [3, 2, 4, 6, 10]
 ```
 
 What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
@@ -109,7 +115,9 @@ moreMorse.split(" ")
 ```
 
 ```text
-Your answer goes here.
+step 1: ["dot dash pause dash dot"]
+Prediction: ["dot", "dash", "pause", "dash", "dot"]
+Actual:["dot", "dash", "pause", "dash", "dot"]
 ```
 
 What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
@@ -126,7 +134,11 @@ bands[1][3] = "Ringo"
 ```
 
 ```text
-Your answer goes here.
+step 1: [["Brian", "Mick", "Keith", "Ronnie", "Charlie"], ["Paul", "John", "George", "Pete"]]
+step 2: [["Brian", "Mick", "Keith", "Ronnie", "Charlie"], ["Paul", "John", "George"]]
+step 3: [["Mick", "Keith", "Ronnie", "Charlie"], ["Paul", "John", "George", "Pete"]]
+Prediction: [["Mick", "Keith", "Ronnie", "Charlie"], ["Paul", "John", "George", "Ringo"]]
+Actual: [["Mick", "Keith", "Ronnie", "Charlie"], ["Paul", "John", "George", "Ringo"]]
 ```
 
 ## Booleans & Comparison Operators
