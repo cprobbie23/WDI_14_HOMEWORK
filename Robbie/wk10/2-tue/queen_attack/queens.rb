@@ -21,15 +21,6 @@ class Queens
     @b_queen_pos
   end
 
-  # def to_s
-  #   board = Array.new(8)
-  #   8.times do |row_index|
-  #     board[row_index] = ("O " * 8).chomp(' ')
-  #   end
-  #   board.join("\n")
-  # end
-
-
   def to_s
     board = Array.new(8)
     8.times do |row_index|
@@ -44,5 +35,15 @@ class Queens
       row.join(' ')
     end
     new_board.join("\n")
+  end
+
+  def attack?
+    if @w_queen_pos[0] == @b_queen_pos[0] || @w_queen_pos[1] == @b_queen_pos[1]
+      return true
+    elsif (@w_queen_pos[0] - @b_queen_pos[0] == @w_queen_pos[1] - @b_queen_pos[1])
+      return true
+    else
+      return false
+    end
   end
 end
