@@ -29,6 +29,17 @@ app.get('/:name', function (req, res) {
   })
 });
 
+app.get('/*', function (req, res) {
+  // res.send('Hey there, how are you today?'); // not needed
+  var compliment = _.sample(compliments);
+  var color = _.sample(colors);
+  res.render('index', {
+    compliment,
+    color,
+    name: 'there'
+  })
+});
+
 app.listen(PORT, function () {
   console.log(`listening on port ${PORT}`);
 })
